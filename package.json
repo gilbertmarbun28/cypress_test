@@ -1,0 +1,29 @@
+{
+  "name": "cypress_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilbertmarbun28/cypress_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilbertmarbun28/cypress_test/issues"
+  },
+  "homepage": "https://github.com/gilbertmarbun28/cypress_test#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cucumber/cucumber": "^10.8.0",
+    "cypress": "^13.13.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/**/*.js"
+  }
+}
