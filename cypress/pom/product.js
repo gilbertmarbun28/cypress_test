@@ -44,4 +44,19 @@ export default class productPage {
     static filterConnectivityApplied(){
         return cy.get('[class*="x-flyout brm__flyout brm__flyout--selected"]').eq(3);
     }
+    static fieldSearch(){
+        return cy.get('[id="gh-ac-box2"]');
+    }
+    static filterCategory(){
+        return cy.get('#gh-cat');
+    }
+    static buttonSearch(){
+        return cy.get('[id="gh-btn"]');
+    }
+    static labelResult(){
+        return cy.get('.srp-controls__count-heading');
+    }
+    static firstProduct(){
+        return cy.get('.s-item__title .BOLD').eq(0);
+    }
 }
